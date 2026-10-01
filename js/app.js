@@ -27,25 +27,3 @@ btnVoltar.onclick = function() {
     pagina1.style.display = "flex";
 
 };
-
-/* REGISTRAR SERVICE WORKER */
-
-if ("serviceWorker" in navigator) {
-
-    navigator.serviceWorker.register("./service-worker.js")
-
-        .then(function() {
-
-            console.log("Service Worker registrado.");
-
-        })
-
-        .catch(function(erro) {
-
-            console.log("Erro ao registrar Service Worker:", erro);
-
-        });
-
-}
-
-
