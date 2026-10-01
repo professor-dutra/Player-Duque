@@ -43,7 +43,7 @@
 
     <script>
         if ("serviceWorker" in navigator) {
-        navigator.serviceWorker.register("service-worker.js")
+        navigator.serviceWorker.register("./sw.js")
             .then(() => console.log("Service Worker registrado."))
             .catch((erro) => console.error("Erro no Service Worker:", erro));
             }
